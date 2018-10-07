@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CAGD</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<style>
+		body{
+			background-color: #000;
+			color: #fff;
+			margin : 0;
+			overflow: hidden;
+		}
+		#tips{
+			bottom: 10px;
+			z-index: 99;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+		}
+	</style>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="Property.js"></script>
+	<script src="three.js"></script>
+	<script src="dat.gui.min.js"></script>
+	<script src="Geom.js"></script>
+	<script src="Main_button.js"></script>
+	<script src="ParaGUI.js"></script>
+	<script src="OrbitControls.js"></script>
+	<script src="Projector.js"></script>
+	<script src="AIS.js"></script>
+	<script src="Draw.js"></script>
+</head>
+<body onload = "threeStart();">
+	<form id="saveform" action="save.php" method="post" target="nm_iframe" style="position: absolute; filter:alpha(opacity=0);opacity:0;width: 0;height: 0;">
+		<input type="text" id="result" name="result" style="position: absolute; display: none; filter:alpha(opacity=0);opacity:0;width: 0;height: 0;">
+		<input type="submit" id="submit" style="position: absolute; display: none; filter:alpha(opacity=0);opacity:0;width: 0;height: 0;">
+	</form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    <input type="file" id="file" accept=".cagd" onchange="main_button.get_file_path()" style="position: absolute; display: none; filter:alpha(opacity=0);opacity:0;width: 0;height: 0;">
+	<div id= "tips" ></div>
+</body>
+</html>
