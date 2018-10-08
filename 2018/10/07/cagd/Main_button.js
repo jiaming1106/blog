@@ -201,9 +201,9 @@ main_button.generate_save_file = function(){
         ans += 1+" "+bsp.geo.order[0]+" "+bsp.geo.order[1]+" "+bsp.geo.ctrlPtsNum[0]+" "+bsp.geo.ctrlPtsNum[1]+" ";
         for(var j=0;j<bsp.geo.ctrlPts.length;j++){
             ans += bsp.geo.ctrlPts[j]+" ";
-            if((j%3)==2){
-                ans += "1 "
-            }
+            //if((j%3)==2){
+            //    ans += "1 "
+            //}
         }
         for(var k=0;k<bsp.geo.knotNum[0];k++){
             ans += bsp.geo.knots[0][k]+" ";
