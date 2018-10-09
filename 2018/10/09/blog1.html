@@ -6,37 +6,28 @@
 -->
 <html>
 	<head>
-		<title>Jiaming 的 博客</title>
+		<title>重新理解CAGD中的各种样条 - Jiaming</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>This is<br />
-						Jiaming</h1>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Jiaming</a>
+						<a href="../../../index.html" class="logo">Jiaming</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Jiaming的博客</a></li>
-							<li><a href="yangjiaming.html">Yang-Jiaming</a></li>
-							<li><a href="songjiaming.html">Song-Jiaming</a></li>
+							<li><a href="../../../index.html">Jiaming的博客</a></li>
+							<li class="active"><a href="../../../yangjiaming.html">Yang-Jiaming</a></li>
+							<li><a href="../../../songjiaming.html">Song-Jiaming</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://github.com/jiaming1106" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -46,61 +37,20 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
+						<!-- Post -->
+							<section class="post">
 								<header class="major">
-									<span class="date">October 07, 2018</span>
-									<h2><a href="2018/10/09/blog1.html">重新理解CAGD中的各种样条</a></h2>
+									<span class="date">October 09, 2018</span>
+									<h1>重新理解CAGD中的各种样条</h1>
 									<p>一直以来做 CAGD相关的学习和研究工作，听到最多的、印象最深的、个人感觉最神圣的一个词就是样条。B样条、非均匀有理 B样条、PB样条、T样条等等，为什么有这么多的样条，样条到底是什么，这个问题一直困扰着我。最近面对 T样条的一些问题实在无从下手，于是终于下定决心探寻一下这些样条方法最初的数学意义。</p>
 								</header>
-								<a href="2018/10/09/blog1.html" class="image main"><img src="images/pic03.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="2018/10/09/blog1.html" class="button large">Full Story</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">October 07, 2018</span>
-										<h2><a href="2018/10/07/blog2.html">Web CAGD</a></h2>
-									</header>
-									<a href="2018/10/07/blog2.html" class="image fit"><img src="images/pic02.png" alt="" /></a>
-									<p>2018年年初，为了完成CAGD课程大作业，编写了一个网页版CAD软件DEMO。由于原服务器以及域名(<a href="http://www.cagd.xyz">www.cagd.xyz</a>)即将过期，搬运到此处，并提供了一些操作说明。</p>
-									<ul class="actions special">
-										<li><a href="2018/10/07/blog2.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">October 07, 2018</span>
-										<h2><a href="2018/10/07/blog1.html">Hello World</a></h2>
-									</header>
-									<a href="2018/10/07/blog1.html" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-									<p>Yang和 Song在 github上建立的第一个博客。<br />
-									建立过程参考的是<a href="https://www.zhihu.com/people/luhongquan/activities">天之蓝源</a>在知乎上的回答。<br />
-									博客的THEME来自HTML5 UP。</p>
-									<ul class="actions special">
-										<li><a href="2018/10/07/blog1.html" class="button">Full Story</a></li>
-									</ul>
-								</article>
+								<a href="cagd/index.html" class="image main" target="_blank"><img src="../../../images/pic03.png" alt="" /></a>
+								<p>尽管已经学了CAGD教材里的B样条方法、NURBS方法，可以编程实现这些方法绘制曲线曲面，知道这些方法各种各样的性质、优点、缺点，但是我依旧不知道这些这些方法中<b>样条</b>两个字到底意味着什么。我相信这是很多刚接触CAGD研究不久的人常有的一个疑问。就像一个刚学象棋的学徒背了几张棋谱，知道有些情况照着棋谱该怎么下了，但是其实还没领悟棋谱中每步棋的用意。或者像刚玩魔方的初学者，照着网上的公式可以慢慢还原一个魔方了，但是想要进一步提高的话就要理解每种变换的意义和由来。因此，一直以来我都想探寻一下数学里面样条函数到底是什么样子的。最近对T样条的学习遇到了一些瓶颈，于是终于下定决心进行一下这件事情。<br/>
+								CAGD教材里对于样条方法的解读往往偏重于应用、性质、算法。学习的重点一般都在于：某种方法的基本表达式是什么，绘制的算法流程是什么，这类曲线曲面有什么优良的性质，其基本修改操作有哪些。这些知识对于传统的偏重几何的CAD领域学生而言确实是足够了，但如今我们想要把CAGD中的一些经验和思想发展到其他领域去，就会发现这些知识过于偏重于应用，而没有让我们理解到其深层次的数学原理。<br/>
+								在研究生的课程中除了CAGD会接触到样条外，另外一个提及样条的就是数值分析中的插值与逼近。通过我最近的阅读，我才理解到，其实CAGD中讲的很多方法和基函数都是与数学里的函数逼近论有着很深刻的联系的。样条函数大概就是在这个领域中首先被提出并深入研究的。只不过数值分析里讲的样条方法其实与CAGD中的样条方法是一个问题的正逆两个方向。如果用CAGD中的话来讲的话，数值分析里讲的东西是样条曲线曲面的反算，而CAGD则更多是从正算的角度来阐述样条方法的。<br/>
+								</p>
+								
 							</section>
-
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
 
 					</div>
 
